@@ -33,7 +33,7 @@ if st.sidebar.button("Post Transaction"):
             post_transaction(desc, 5000, 2000, amt, partner)  # Dr Expense, Cr AP
         elif "Payment Sent" in event_type:
             post_transaction(desc, 2000, 1000, amt, partner)  # Dr AP, Cr Cash
-        st.sidebar.success("Success! The books are balanced.")
+        st.sidebar.success("Success!")
     else:
         st.sidebar.error("Please fill all fields.")
 
