@@ -261,4 +261,8 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
+#DB
+*.sqlite3
+*.db
+
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm+all
