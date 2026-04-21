@@ -1,8 +1,8 @@
 import sqlite3
 from datetime import datetime
 
-def post_transaction(description, debit_acc, credit_acc, amount, partner):
-    conn = sqlite3.connect("accounting.db")
+def post_transaction(description: str, debit_acc: int, credit_acc: int, amount: int, partner: str, db_path="accounting.db"):
+    conn = sqlite3.connect(db_path)
 
     try:
         with conn:
